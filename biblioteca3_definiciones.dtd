@@ -1,6 +1,11 @@
-<!ELEMENT biblioteca ( libro+ ) >
-<!ELEMENT libro ( titulo, autor, anoPublicacion )>
-<!ELEMENT titulo ( #PCDATA )>
-<!ELEMENT autor ( #PCDATA )>
-<!ELEMENT anoPublicacion ( #PCDATA )>
-<!ELEMENT fechaNacimientoAutor CDATA ( #IMPLIED )>
+<!ELEMENT biblioteca (libro+)>
+<!ELEMENT libro ( titulo, autor, fechaPublicacion)>
+<!ELEMENT titulo (#PCDATA)>
+	<!ATTLIST titulo
+		numPaginas CDATA "5">
+<!ELEMENT autor (#PCDATA)>
+	<!ATTLIST autor
+		fechaNacimientoAutor CDATA #IMPLIED>
+<!ELEMENT fechaPublicacion EMPTY>
+    <!ATTLIST fechaPublicacion
+        anho CDATA #REQUIRED>

@@ -3,9 +3,8 @@
 
 <biblioteca>
   <libro>
-    <titulo>La vida está en otra parte</titulo>
-    <autor>Milan Kundera</autor>
-    <anoPublicacion>1973</anoPublicacion>
-	<fechaNacimientoAutor></fechaNacimientoAutor>
+    <titulo numPaginas="4">La vida está en otra parte</titulo>
+    <autor fechaNacimientoAutor="05/04/1950">Milan Kundera</autor>
+    <fechaPublicacion anho="1973"/>
   </libro>
 </biblioteca>

@@ -2,16 +2,17 @@
 <!DOCTYPE grupo[
 	<!ELEMENT grupo ( alumno+ ) >
 		<!ELEMENT alumno ( nombreCompleto, fila, edad )>
+			<!ATTLIST alumno
+				colorPelo (rubio|castaño) #REQUIRED>
 		<!ELEMENT nombreCompleto ( nombre, apellidos )>
 			<!ELEMENT nombre ( #PCDATA )>
 			<!ELEMENT apellidos ( #PCDATA )>
 		<!ELEMENT fila ( #PCDATA )>
 		<!ELEMENT edad EMPTY>
-
 ]>
 
 <grupo>
-	<alumno>
+	<alumno colorPelo="rubio">
 		<nombreCompleto>
 			<nombre>María</nombre>
 			<apellidos>López</apellidos>
@@ -19,7 +20,7 @@
 		<fila>1</fila>
 		<edad></edad>
 	</alumno>
-	<alumno>
+	<alumno colorPelo="castaño">
 		<nombreCompleto>
 			<nombre>Enrique</nombre>
 			<apellidos>Pérez</apellidos>
@@ -27,7 +28,7 @@
 		<fila>3</fila>
 		<edad></edad>
 	</alumno>
-	<alumno>
+	<alumno colorPelo="rubio">
 		<nombreCompleto>
 			<nombre>Aurora</nombre>
 			<apellidos>Alonso</apellidos>
