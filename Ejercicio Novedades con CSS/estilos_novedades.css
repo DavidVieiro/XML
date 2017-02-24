@@ -1,0 +1,13 @@
+
+titulo, url, descripcion {
+	display: block;
+	margin-left: 30px;
+}
+
+titulo {
+	display: list-item;
+	color: red;
+	font-weight: bold;
+	list-style: disc inside;
+	font-size: 125%;
+}

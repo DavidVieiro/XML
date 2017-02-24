@@ -1,0 +1,13 @@
+<!ELEMENT lista (producto+)>
+    <!ELEMENT producto (nombre, fabricante, precio+)>
+    <!ATTLIST producto
+        color NMTOKEN
+        referencia ID>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT fabricante (empresa, localidad?)>
+            <!ELEMENT empresa (#PCDATA)>
+            <!ELEMENT localidad (#PCDATA)>
+        <!ELEMENT precio (#PCDATA)>
+        <!ATTLIST precio
+            cliente (final|distribuidor)
+            moneda (euro|dolar) "euro">

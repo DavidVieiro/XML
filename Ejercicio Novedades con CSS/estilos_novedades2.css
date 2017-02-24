@@ -1,0 +1,17 @@
+novedades {
+	display: table;
+	border: 2px solid red;
+	width: 70%;
+	border-spacing: 5px;
+}
+novedad {
+	display: table-row;
+	
+}
+
+titulo, url, descripcion {
+	display: table-cell;
+	border: 2px solid green;
+	padding: 2px;
+}
+
