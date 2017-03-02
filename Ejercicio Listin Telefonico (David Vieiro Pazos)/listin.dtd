@@ -1,0 +1,23 @@
+<!--
+▪ Un nombre
+▪ email (0 o varios)
+▪ relacion (no obligatorio y vacío)
+▪ Un identificador (id)
+▪ Un atributo sexo (hombre o mujer) (no obligatorio)
+▪ Atributos de relacion
+	▪ amigo-de (indicará con qué otras personas del listin tiene relación) (una
+	persona puede no tener relación con ninguna)
+	▪ enemigo-de (indicará con qué otra persona del listin tiene enemistad)
+	(una persona puede no tener enemistad con ninguna)
+-->
+<!ELEMENT listin ( persona+ )>
+	<!ELEMENT persona ( nombre, email*, relacion )>
+		<!ATTLIST persona
+		id ID #REQUIRED
+		sexo (hombre|mujer) #IMPLIED>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT email (#PCDATA)>
+	<!ELEMENT relacion EMPTY>
+		<!ATTLIST relacion
+		amigo-de IDREFS #IMPLIED
+		enemigo-de IDREFS #IMPLIED>

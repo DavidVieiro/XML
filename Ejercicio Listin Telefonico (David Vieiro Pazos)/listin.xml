@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "listin.dtd">
+
+<listin>
+	<persona id="ricky" sexo="hombre">
+		<nombre>Ricky Martin</nombre>
+		<email>ricky@puerto-rico.com</email>
+		<email>ricky@gmail.com</email>
+		<relacion amigo-de="leticia" />
+	</persona>
+	
+	<persona id="leticia" sexo="mujer">
+		<nombre>Leaticia Casta</nombre>
+		<email>castal@micasa.com</email>
+		<relacion />
+	</persona>
+	
+	<persona id="pepe">
+		<nombre>Pepe Pérez</nombre>
+		<relacion amigo-de="leticia ricky" enemigo-de="pepe" />
+	</persona>
+	
+	<persona id="ana">
+		<nombre>Ana López</nombre>
+		<relacion amigo-de="leticia pepe" enemigo-de="ricky" />
+	</persona>
+</listin>
