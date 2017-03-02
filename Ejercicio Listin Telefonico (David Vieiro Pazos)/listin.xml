@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE biblioteca SYSTEM "listin.dtd">
+<!DOCTYPE listin SYSTEM "listin.dtd">
 
 <listin>
 	<persona id="ricky" sexo="hombre">
