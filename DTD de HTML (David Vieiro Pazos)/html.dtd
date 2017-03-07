@@ -1,0 +1,22 @@
+<!ELEMENT html (head, body)>
+	<!ELEMENT head (title)>
+		<!ELEMENT title (#PCDATA)>
+	<!ELEMENT body (h1, h2?, form)>
+		<!ELEMENT h1 (#PCDATA)>
+		<!ELEMENT h2 (#PCDATA)>
+		<!ELEMENT form (input+, select, input+)>
+			<!ATTLIST form
+			action CDATA #REQUIRED
+			method (get|post) #REQUIRED>
+			<!ELEMENT input EMPTY>
+				<!ATTLIST input 
+				type (checkbox|radio|submit|reset) #REQUIRED
+				name NMTOKEN #IMPLIED
+				value CDATA #IMPLIED>
+			<!ELEMENT select (option+)>
+				<!ATTLIST select
+				name NMTOKEN #REQUIRED
+				size CDATA #IMLPIED>
+				<!ELEMENT option (#PCDATA)>
+				<!ATTLIST option 
+				value ID #REQUIRED>
